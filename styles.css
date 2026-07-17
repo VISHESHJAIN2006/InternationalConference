@@ -460,3 +460,41 @@ footer ul a:hover{color:var(--gold-soft);}
     font-size: 28px;   /* Change this value as needed */
     line-height: 1.5;  /* Optional: improves readability */
 }
+
+
+/* ===== Mobile improvements added ===== */
+@media (max-width:900px){
+  .nav img:first-child{
+    width:80px !important;
+    height:auto !important;
+  }
+  .nav img:nth-child(2){
+    width:45px !important;
+    height:auto !important;
+    margin-left:8px !important;
+  }
+  .brand-text{
+    display:none;
+  }
+  .nav .wrap{
+    gap:10px;
+    padding-left:12px;
+    padding-right:12px;
+  }
+  .hero{
+    padding-top:30px;
+  }
+  .hero-inner{
+    gap:28px;
+  }
+  .hero-meta{
+    justify-content:center;
+  }
+  .org-strip{
+    justify-content:center;
+    text-align:center;
+  }
+  .count-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
