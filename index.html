@@ -19,16 +19,12 @@
 
 <nav class="nav" id="mainNav">
   <div class="wrap">
-    <a href="#" class="brand">
-      <div class="brand-logos">
-        <img src="VIT_Bhopal_logo (1).svg" alt="VIT Bhopal">
-        <img src="NIT Warangal Institute Website Icon.png" alt="NIT Warangal">
-      </div>
-      <span class="brand-text">
-        <strong>RTASCE 2023</strong>
-        <span>VIT Bhopal University</span>
-      </span>
-    </a>
+
+            <img src="VIT_Bhopal_logo (1).svg" alt="VIT Bhopal University Logo" width="200" height="100" style="display:inline-block; vertical-align:middle;">
+
+            <img src="NIT Warangal Institute Website Icon.png" alt="NIT Warangal Logo" width="100" height="100" style="display:inline-block; vertical-align:middle; margin-left:20px;">
+
+      <span class="brand-text"><strong>RTASCE 2023</strong><span>VIT Bhopal University</span></span>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#overview">Overview</a></li>
@@ -514,6 +510,7 @@ navToggle.addEventListener("click", () => {
 });
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   navLinks.classList.remove('open');
+  document.body.classList.remove('menu-open');
   navToggle.setAttribute('aria-expanded', 'false');
 }));
 
