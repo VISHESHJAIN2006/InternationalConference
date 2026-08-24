@@ -505,12 +505,14 @@ navToggle.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("open");
 
     document.body.classList.toggle("menu-open", isOpen);
+    navToggle.classList.toggle("open", isOpen);
 
     navToggle.setAttribute("aria-expanded", isOpen);
 });
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   navLinks.classList.remove('open');
   document.body.classList.remove('menu-open');
+  navToggle.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
 }));
 
